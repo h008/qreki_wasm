@@ -1,0 +1,17 @@
+[package]
+name = "qreki"
+version = "0.1.4"
+authors = [ "h008<h_008@mac.com>"]
+description = "wasm-tuto"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+chrono = "0.4.19"
+libm = "0.2.1"
+serde = {version= "1.0",features = ["derive"]}
+wasm-bindgen = {version="0.2.45",features = ["serde-serialize"]}
+qreki={version="0.1.2",git="https://github.com/h008/qreki"}
